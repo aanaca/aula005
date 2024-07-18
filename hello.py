@@ -40,7 +40,7 @@ def index():
         old_name = session.get('nome')
         if old_name is not None and old_name != form.nome.data:
             flash('Você alterou o seu nome!')
-        session['name']        = form.nome.data
+        session['nome']        = form.nome.data
         session['sobrenome']   = form.sobrenome.data
         session['instituicao'] = form.instituicao.data
         session['disciplina']  = form.disciplina.data
