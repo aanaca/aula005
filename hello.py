@@ -48,7 +48,7 @@ def index():
     return render_template('index.html',
                             current_time = datetime.utcnow(),
                             form         = form,
-                            nome         = session.get('name'),
+                            nome         = session.get('nome'),
                             sobrenome    = session.get('sobrenome'),
                             instituicao  = session.get('instituicao'),
                             disciplina   = session.get('disciplina'),
